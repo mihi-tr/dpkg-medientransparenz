@@ -40,7 +40,7 @@ def lookup(entry):
   ds=nomenklatura.Dataset("medientransparenz",api_key=nkey)
   try:
     v=ds.lookup(entry["MEDIUM_MEDIENINHABER"])
-    entry["MEDIUM_MEDIENINHABER"]=str(v)
+    entry["MEDIUM_MEDIENINHABER"]=unicode(v)
 
   except ds.NoMatch:
     print u"no match for %s"%entry["MEDIUM_MEDIENINHABER"]
