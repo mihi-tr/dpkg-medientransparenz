@@ -82,9 +82,12 @@ def lookup(entry):
 if __name__=="__main__":
   gen=ukgen()
   cache=NKCache()
+  ignore=re.compile(" 31")
   fs=[id,clear_amount,split_year,bekanntgabe,utf,lookup]
 
   entries=itertools.ifilter(lambda x: x["LEERMELDUNG"]=="0", get(url))
+  entries=itertools.ifilter(lambda x: not
+  ignore.search(x["MEDIUM_MEDIENINHABER"]), entries)
   entries=reduce(lambda x,y: map(y,x),fs,entries)
 
   f=open("../data/mtg.csv","wb")
