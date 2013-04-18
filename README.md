@@ -1,8 +1,9 @@
-Datapackage Medientransparenzgesetz
-===================================
+Data on political advertising spending in Austria from medientransparenzgesetz
+publications by Austria's RTR.
 
-This is a datapackage for the medientransparenzgesetz publications by
-austrias RTR.
+<img src="http://i.imgur.com/8LoTgq4.png" alt="" />
+
+## Data
 
 Extract:
 
@@ -14,3 +15,4 @@ Extract:
 
 uses [Nomenklatura](http://nomenklatura.okfnlabs.org) to clean up the
 recipients.
+
