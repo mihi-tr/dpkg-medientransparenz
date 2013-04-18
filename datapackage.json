@@ -1,10 +1,59 @@
 {
-"metadata": {
-  "name":"medientransparenz",
-  "title":"Medientransparenz Oesterreich",
-  "description":"Austrian Government owned Companies and Ministries need to report their financial contributions to media companies quarterly - this is the data they report..",
-  "keywords":["Austria","Media","Advertising"],
-  "source":"https://www.rtr.at/de/m/veroeffent_medkftg_bisher"
-  }
-
+  "name": "medientransparenz", 
+  "title": "Medien Transparenz",
+  "license": [
+    {
+      "url": "http://opendatacommons.org/licenses/pddl/1.0/", 
+      "name": "Public Domain Dedication and License"
+    }
+  ], 
+  "resources": [
+    {
+      "path": "data/mtg.csv",
+      "schema": {
+        "fields": [
+          {
+            "type": "string", 
+            "id": "MEDIUM_MEDIENINHABER"
+          }, 
+          {
+            "type": "string", 
+            "id": "medium"
+          }, 
+          {
+            "type": "string", 
+            "id": "RECHTSTR\u00c4GER"
+          }, 
+          {
+            "type": "string", 
+            "id": "LEERMELDUNG"
+          }, 
+          {
+            "type": "string", 
+            "id": "QUARTAL"
+          }, 
+          {
+            "type": "string", 
+            "id": "bekanntgabe_description"
+          }, 
+          {
+            "type": "string", 
+            "id": "year"
+          }, 
+          {
+            "type": "string", 
+            "id": "BEKANNTGABE"
+          }, 
+          {
+            "type": "string", 
+            "id": "id"
+          }, 
+          {
+            "type": "string", 
+            "id": "EURO"
+          }
+        ]
+      }
+    }
+  ]
 }
