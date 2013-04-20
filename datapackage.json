@@ -1,5 +1,5 @@
 {
-  "name": "medientransparenz", 
+  "name": "medien-transparenz", 
   "title": "Medien Transparenz",
   "license": [
     {
@@ -14,22 +14,28 @@
         "fields": [
           {
             "type": "string", 
+            "description": "Media outlet owner",
             "id": "MEDIUM_MEDIENINHABER"
           }, 
           {
             "type": "string", 
+            "description": "Media outlet",
             "id": "medium"
           }, 
           {
             "type": "string", 
+            "description": "Organization paying for the advertisement",
             "id": "RECHTSTR\u00c4GER"
           }, 
           {
-            "type": "string", 
+            "type": "integer", 
+            "description": "1 if no reports in the database",
             "id": "LEERMELDUNG"
           }, 
           {
             "type": "string", 
+            "format": "yyyyq",
+            "description": "Quarter of the year",
             "id": "QUARTAL"
           }, 
           {
@@ -37,7 +43,8 @@
             "id": "bekanntgabe_description"
           }, 
           {
-            "type": "string", 
+            "type": "date", 
+            "format": "yyyy",
             "id": "year"
           }, 
           {
@@ -45,11 +52,12 @@
             "id": "BEKANNTGABE"
           }, 
           {
-            "type": "string", 
+            "type": "integer", 
             "id": "id"
           }, 
           {
-            "type": "string", 
+            "type": "number", 
+            "description": "Amount in Euros",
             "id": "EURO"
           }
         ]
